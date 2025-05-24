@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     padding-top: 70px;
+    margin: 0;
 }
 
 .custom-navbar {
@@ -32,7 +33,7 @@ body {
 
 .jumbotron {
     background: url('img/1.jpeg') no-repeat center center;
-    background-size: 100% auto;
+    background-size: cover;
     color: white;
     height: 500px;
     display: flex;
@@ -40,6 +41,8 @@ body {
     justify-content: center;
     text-shadow: 2px 2px 4px #000;
     margin-bottom: 0;
+    text-align: center;
+    padding: 20px;
 }
 
 .nav-link {
@@ -54,6 +57,8 @@ body {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease-in-out;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .custom-card:hover {
@@ -64,6 +69,9 @@ body {
     background-color: #000;
     color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .custom-btn:hover {
@@ -80,9 +88,10 @@ body {
 
 .about-card {
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
 }
 
 .about-card:hover {
@@ -93,10 +102,53 @@ body {
 .about-card h2 {
     color: #1e1e2f;
     font-weight: 700;
+    font-size: 1.8rem;
 }
 
 .about-card p {
     color: #555;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .jumbotron {
+        height: auto;
+        padding: 40px 20px;
+        background-size: cover;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .custom-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-card p {
+        font-size: 0.95rem;
+    }
+
+    .navlogo {
+        width: 40px;
+        padding: 5px;
+    }
 }
