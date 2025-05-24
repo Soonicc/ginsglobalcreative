@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 70px;
+}
+
+.custom-navbar {
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
+    z-index: 1030;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navlogo {
+    width: 50px;
+    padding: 10px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    padding: 1rem 2rem;
+}
+
+.jumbotron {
+    background: url('img/1.jpeg') no-repeat center center;
+    background-size: 100% auto;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 0;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(246, 255, 0) !important;
+}
+
+.custom-card {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn {
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 25px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-card h2 {
+    color: #1e1e2f;
+    font-weight: 700;
+}
+
+.about-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
