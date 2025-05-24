@@ -1,14 +1,17 @@
 /* BASE STYLES */
+/* General layout */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
-    padding-top: 70px;
+    padding-top: 80px; /* Agar konten tidak ketiban navbar */
     margin: 0;
 }
 
+/* Fixed navbar styling */
 .custom-navbar {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     transition: background-color 0.3s ease;
     z-index: 1030;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -16,31 +19,37 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0.5rem 1rem;
 }
 
+/* Scroll effect */
 .custom-navbar.scrolled {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
 }
 
+/* Logo style */
 .navlogo {
     width: 40px;
-    padding: 5px;
+    height: auto;
+    margin-right: 10px;
 }
 
-.navbar {
+/* Navbar brand alignment */
+.navbar-brand {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff !important;
 }
 
-.nav-link {
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 0.5rem 1rem;
     transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: rgb(246, 255, 0) !important;
+    font-weight: 500;
 }
 
 .jumbotron {
